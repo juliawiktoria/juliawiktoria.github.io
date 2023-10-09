@@ -13,23 +13,26 @@
   }
 
   .logo-link {
-    text-decoration: none; /* Remove underlining */
-    color: var(--dark-color); /* Set the color of the text */
+    text-decoration: none;
+    color: var(--dark-color);
   }
   
   .logo-text {
-    font-size: 24px; /* Adjust the size as needed */
-    font-weight: bold; /* Optionally, set the font weight */
+    font-size: 24px;
+    font-weight: bold;
+    &:hover {
+        color: var(--accent-dark);
+      }
   }
   
   .logo-container {
-    margin-right: auto; /* Pushes the icons to the right */
+    margin-right: auto;
   }
   
   .logo-text {
-    color: var(--dark-color); /* Set the color of the text */
-    font-size: 24px; /* Adjust the size as needed */
-    font-weight: bold; /* Optionally, set the font weight */
+    color: var(--dark-color);
+    font-size: 24px;
+    font-weight: bold;
   }
   
   .icons-container {
@@ -37,19 +40,18 @@
   }
   
   .icon-link {
-    margin-left: 20px; /* Adjust spacing between icons */
-    color: var(--dark-color); /* Set the color of the icons */
+    margin-left: 20px;
+    color: var(--dark-color);
     text-decoration: none;
-    font-size: 24px; /* Adjust the size of the icons */
-    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+    font-size: 24px;
+    transition: color 0.3s ease;
   
-    /* Optional: Add more space to the right of the last icon */
     &:last-child {
       margin-right: 10px;
     }
   
     &:hover {
-      color: #ffd700; /* Change the color on hover (e.g., gold) */
+      color: var(--accent-dark);
     }
   }
   

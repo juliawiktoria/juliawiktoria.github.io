@@ -1,11 +1,14 @@
 import React from 'react';
-import About from './components/About';
 import Navbar from './components/Navbar';
+import MainPage from './components/MainPage';
 
 function App() {
   return (
     <div>
       <Navbar />
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <MainPage />
+      </React.Suspense>
     </div>
   );
 }

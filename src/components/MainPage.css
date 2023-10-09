@@ -1,0 +1,19 @@
+@import '../colours.css';
+
+.centered-content {
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+  padding: 50px;
+}
+
+.main-heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--accent-dark);
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  color: var(--accent-light);
+}

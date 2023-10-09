@@ -1,0 +1,55 @@
+@import '../colours.css';
+
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    z-index: 1000;
+  }
+
+  .logo-link {
+    text-decoration: none; /* Remove underlining */
+    color: var(--dark-color); /* Set the color of the text */
+  }
+  
+  .logo-text {
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: bold; /* Optionally, set the font weight */
+  }
+  
+  .logo-container {
+    margin-right: auto; /* Pushes the icons to the right */
+  }
+  
+  .logo-text {
+    color: var(--dark-color); /* Set the color of the text */
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: bold; /* Optionally, set the font weight */
+  }
+  
+  .icons-container {
+    display: flex;
+  }
+  
+  .icon-link {
+    margin-left: 20px; /* Adjust spacing between icons */
+    color: var(--dark-color); /* Set the color of the icons */
+    text-decoration: none;
+    font-size: 24px; /* Adjust the size of the icons */
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+  
+    /* Optional: Add more space to the right of the last icon */
+    &:last-child {
+      margin-right: 10px;
+    }
+  
+    &:hover {
+      color: #ffd700; /* Change the color on hover (e.g., gold) */
+    }
+  }
+  

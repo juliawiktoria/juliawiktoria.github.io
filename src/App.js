@@ -1,10 +1,10 @@
 import React from 'react';
-import Photo from './components/Photo';
+import About from './components/About';
 
 function App() {
   return (
     <div>
-      <Photo />
+      <About />
     </div>
   );
 }

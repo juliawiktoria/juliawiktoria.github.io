@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
       <div className="middle-section">
         <a href="#about" className="nav-link">About</a>
-        <a href="#resume" className="nav-link">Resume</a>
+        <a href="/CV.pdf" className="nav-link" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="#projects" className="nav-link">Projects</a>
       </div>
       <div className="icons-container">

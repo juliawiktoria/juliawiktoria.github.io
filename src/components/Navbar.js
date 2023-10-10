@@ -11,6 +11,11 @@ const Navbar = () => {
           <span className="logo-text">JZ</span>
         </a>      
       </div>
+      <div className="middle-section">
+        <a href="#about" className="nav-link">About</a>
+        <a href="#resume" className="nav-link">Resume</a>
+        <a href="#projects" className="nav-link">Projects</a>
+      </div>
       <div className="icons-container">
         <a href="https://www.linkedin.com/in/juliawiktoria/" className="icon-link" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} />

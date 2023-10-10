@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faGithub, faStrava, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Navbar.css'; 
@@ -12,9 +13,9 @@ const Navbar = () => {
         </a>      
       </div>
       <div className="middle-section">
-        <a href="#about" className="nav-link">About</a>
+        <Link to="/about" className="nav-link">About</Link>
         <a href="/CV.pdf" className="nav-link" target="_blank" rel="noopener noreferrer">Resume</a>
-        <a href="#projects" className="nav-link">Projects</a>
+        <Link to="/projects" className="nav-link">Projects</Link>
       </div>
       <div className="icons-container">
         <a href="https://www.linkedin.com/in/juliawiktoria/" className="icon-link" target="_blank" rel="noopener noreferrer">

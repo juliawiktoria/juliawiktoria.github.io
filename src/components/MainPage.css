@@ -6,12 +6,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  max-width: 1000px; /* Adjust the maximum width as needed */
-  padding: 50px; /* Adjust padding as needed */
+  max-width: 1000px;
+  padding: 50px;
+}
+
+.main-heading,
+.sub-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-stretch: expanded;
 }
 
 .main-heading {
-  font-size: 9rem;
+  font-size: 8rem;
   margin-bottom: 20px;
   color: var(--accent-dark);
 }

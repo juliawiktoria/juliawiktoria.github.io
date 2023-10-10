@@ -1,38 +1,21 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import './Projects.css';
+import projectsData from '../data/projects.json';
 
 const Projects = () => {
   return (
     <div className="projects-container">
-      <ProjectCard
-        image="/my_photo.png"
-        title="Project 2"
-        description="Description of Project 2."
-        projectLink="https://github.com/juliawiktoria/CS3026_assignment_1"
-        githubLink="https://github.com/juliawiktoria/CS3026_assignment_1"
-      />
-      <ProjectCard
-        image="/my_photo.png"
-        title="Project 2"
-        description="Description of Project 2."
-        projectLink="https://github.com/juliawiktoria/CS3026_assignment_1"
-        githubLink="https://github.com/juliawiktoria/CS3026_assignment_1"
-      />
-      <ProjectCard
-        image="/my_photo.png"
-        title="Project 2"
-        description="Description of Project 2."
-        projectLink="https://github.com/juliawiktoria/CS3026_assignment_1"
-        githubLink="https://github.com/juliawiktoria/CS3026_assignment_1"
-      />
-      <ProjectCard
-        image="/my_photo.png"
-        title="Project 2"
-        description="Description of Project 2."
-        projectLink="https://github.com/juliawiktoria/CS3026_assignment_1"
-        githubLink="https://github.com/juliawiktoria/CS3026_assignment_1"
-      />
+      {projectsData.map((project) => (
+        <ProjectCard
+          key={project.id}
+          title={project.title}
+          description={project.description}
+          image={project.image}
+          projectLink={project.projectLink}
+          githubLink={project.githubLink}
+        />
+      ))}
     </div>
   );
 };

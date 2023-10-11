@@ -8,10 +8,17 @@
     },
     {
       "id": 2,
-      "title": "Project 2",
+      "title": "ROS Pathfinding Robot",
       "description": "Description of Project 2.",
       "image": "/tasket.png",
-      "projectLink": "https://github.com/juliawiktoria/CS3026_assignment_1",
-      "githubLink": "https://github.com/juliawiktoria/CS3026_assignment_1"
+      "githubLink": "https://github.com/juliawiktoria/ros_project"
+    },
+    {
+      "id": 3,
+      "title": "ROS Pathfinding Robot",
+      "description": "Description of Project 2.",
+      "image": "/research_methods.png",
+      "githubLink": "https://github.com/juliawiktoria/CS4040-research-methods/blob/master/final_paper.pdf",
+      "projectLink": "/ga_final_paper.pdf"
     }
 ]  

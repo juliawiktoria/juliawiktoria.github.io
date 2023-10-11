@@ -4,14 +4,16 @@
       "title": "Tasket - Gamified Task Manager",
       "description": "Tasket is a gamified task manager application for small and medium sized teams in the workplace. It was designed to improve the work experience and increase productivity by introducing functionalities such as gaining experience points and auto-scheduling of jobs, as well as allowing employees to choose their responsibilities by themselves. With the app’s RPG-like graphic design and game-like achievements and functionalities we hope to deliver an easy-to-use, motivational tool, that would make coming to work much more fun.",
       "image": "/tasket.png",
-      "githubLink": "https://github.com/juliawiktoria/CS3528_project"
+      "githubLink": "https://github.com/juliawiktoria/CS3528_project",
+      "year": "2020"
     },
     {
       "id": 2,
       "title": "ROS Pathfinding Robot",
       "description": "Description of Project 2.",
       "image": "/tasket.png",
-      "githubLink": "https://github.com/juliawiktoria/ros_project"
+      "githubLink": "https://github.com/juliawiktoria/ros_project",
+      "year": "2020"
     },
     {
       "id": 3,
@@ -19,6 +21,14 @@
       "description": "Description of Project 2.",
       "image": "/research_methods.png",
       "githubLink": "https://github.com/juliawiktoria/CS4040-research-methods/blob/master/final_paper.pdf",
-      "projectLink": "/ga_final_paper.pdf"
+      "projectLink": "/ga_final_paper.pdf",
+      "year": "2020"
+    },
+    {
+      "id": 4,
+      "title": "Oddle Game",
+      "description": "Description of Project 2.",
+      "image": "/oddle.png",
+      "year": "2023"
     }
 ]  

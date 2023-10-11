@@ -5,7 +5,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import './ProjectCard.css';
 
-const ProjectCard = ({ image, title, description, projectLink, githubLink }) => {
+const ProjectCard = ({ image, title, description, projectLink, githubLink, year, technologies }) => {
   return (
     <div className="project-card">
       <div className="projects-icons-container">
@@ -26,6 +26,13 @@ const ProjectCard = ({ image, title, description, projectLink, githubLink }) => 
       <div className="text-container">
         <h3 className="project-title">{title}</h3>
         <p className="project-description">{description}</p>
+        <p className="project-subheading">{year}</p>
+        <div className="project-technologies">
+          <p>Used Technologies:</p>
+          <ul>
+            {technologies && technologies.map((tech, index) => <li key={index}>{tech}</li>)}
+          </ul>
+        </div>
       </div>
     </div>
   );

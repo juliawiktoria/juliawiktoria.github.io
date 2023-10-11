@@ -1,17 +1,16 @@
 [
     {
       "id": 1,
-      "title": "Project 1",
-      "description": "Description of Project 1.",
-      "image": "/my_photo.png",
-      "projectLink": "https://github.com/juliawiktoria/CS3026_assignment_1",
-      "githubLink": "https://github.com/juliawiktoria/CS3026_assignment_1"
+      "title": "Tasket - Gamified Task Manager",
+      "description": "Tasket is a gamified task manager application for small and medium sized teams in the workplace. It was designed to improve the work experience and increase productivity by introducing functionalities such as gaining experience points and auto-scheduling of jobs, as well as allowing employees to choose their responsibilities by themselves. With the app’s RPG-like graphic design and game-like achievements and functionalities we hope to deliver an easy-to-use, motivational tool, that would make coming to work much more fun.",
+      "image": "/tasket.png",
+      "githubLink": "https://github.com/juliawiktoria/CS3528_project"
     },
     {
       "id": 2,
       "title": "Project 2",
       "description": "Description of Project 2.",
-      "image": "/my_photo.png",
+      "image": "/tasket.png",
       "projectLink": "https://github.com/juliawiktoria/CS3026_assignment_1",
       "githubLink": "https://github.com/juliawiktoria/CS3026_assignment_1"
     }

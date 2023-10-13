@@ -19,7 +19,7 @@
 .main-heading {
   font-size: 8rem;
   margin-bottom: 10px;
-  color: var(--accent-dark);
+  color: var(--brand-color);
 }
 
 .sub-heading {

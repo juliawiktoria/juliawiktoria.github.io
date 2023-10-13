@@ -5,4 +5,19 @@
     --accent-dark: #BE6E64;
     --dark-color: #40464F;
   }
-  
+
+/* :root {
+  --background-color: #121212;
+  --brand-color: #E98B58;
+  --accent-light: #8E8E8E;
+  --accent-dark: #9B594E;
+  --dark-color: #E0E0E0;
+  } */
+
+.dark-mode {
+    --background-color: #121212;
+    --brand-color: #E98B58;
+    --accent-light: #8E8E8E;
+    --accent-dark: #9B594E;
+    --dark-color: #E0E0E0;
+  }

@@ -22,7 +22,7 @@
       "title": "Comparative analysis of mutations in Genetic Algorithm for solving TSP",
       "description": "Description of Project 2.",
       "image": "/research_methods.png",
-      "githubLink": "https://github.com/juliawiktoria/CS4040-research-methods/blob/master/final_paper.pdf",
+      "githubLink": "https://github.com/juliawiktoria/CS4040-research-methods",
       "projectLink": "/ga_final_paper.pdf",
       "year": "2020",
       "technologies": ["Python"]

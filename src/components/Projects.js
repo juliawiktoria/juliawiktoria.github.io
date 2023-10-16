@@ -4,9 +4,11 @@ import './Projects.css';
 import projectsData from '../data/projects.json';
 
 const Projects = () => {
+  const sortedProjects = projectsData.sort((a, b) => b.year - a.year);
+
   return (
     <div className="projects-container">
-      {projectsData.map((project) => (
+      {sortedProjects.map((project) => (
         <ProjectCard
           key={project.id}
           title={project.title}

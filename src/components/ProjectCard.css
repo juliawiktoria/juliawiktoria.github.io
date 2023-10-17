@@ -7,7 +7,7 @@
     margin: 10px;
     width: 75%;
     border-radius: 10px;
-    overflow: hidden;
+    overflow:visible;
   }
   
 .image-container {
@@ -50,4 +50,23 @@ img {
     color: #555;
     font-size: 24px;
     text-decoration: none;
+}
+
+.project-technologies {
+    margin-top: auto; /* Push to the bottom */
+}
+
+.project-technologies ul {
+    list-style: none;
+    display: flex;
+    gap: 5px; /* Adjust gap as needed */
+    margin: 0;
+}
+
+.project-technologies li {
+    background-color: var(--brand-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }

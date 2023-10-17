@@ -7,9 +7,9 @@
     margin: 10px;
     width: 75%;
     border-radius: 10px;
-    overflow:visible;
-  }
-  
+    overflow: visible;
+}
+
 .image-container {
     flex: 1;
     max-width: 25%;
@@ -17,13 +17,15 @@
 }
 
 img {
-    width: 100%; 
+    width: 100%;
     height: auto;
 }
 
 .text-container {
     flex: 3;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-title {
@@ -36,6 +38,7 @@ img {
     font-size: 1rem;
     color: var(--dark-color);
     font-style: bold;
+    margin-bottom: 10px;
 }
 
 .projects-icons-container {
@@ -48,18 +51,21 @@ img {
 
 .projects-icon-link {
     color: #555;
-    font-size: 24px;
+    font-size: 30px;
     text-decoration: none;
 }
 
 .project-technologies {
-    margin-top: auto; /* Push to the bottom */
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .project-technologies ul {
     list-style: none;
     display: flex;
-    gap: 5px; /* Adjust gap as needed */
+    gap: 5px;
     margin: 0;
 }
 

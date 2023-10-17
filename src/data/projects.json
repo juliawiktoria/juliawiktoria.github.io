@@ -33,6 +33,7 @@
       "description": "Description of Project 2.",
       "image": "/oddle.png",
       "year": "2023",
-      "technologies": ["React"]
+      "technologies": ["React"],
+      "projectLink": "https://oddle.netlify.app/"
     }
 ]  

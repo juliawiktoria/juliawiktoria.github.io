@@ -15,7 +15,7 @@ const Footer = () => {
             <Link to="/" className="footer-logo-link">
               <span className="footer-logo-text">JZ</span>
             </Link>
-            <p className="footer-tagline">Software Engineer | Glasgow, UK</p>
+            <p className="footer-tagline">Software Engineer | London, UK</p>
           </div>
 
           <div className="footer-links">

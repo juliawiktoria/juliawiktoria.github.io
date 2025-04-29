@@ -71,7 +71,7 @@ const Contact = () => {
               <FontAwesomeIcon icon={faLocationDot} className="info-icon" />
               <div>
                 <h4>Location</h4>
-                <p>Glasgow, United Kingdom</p>
+                <p>London, United Kingdom</p>
               </div>
             </div>
 

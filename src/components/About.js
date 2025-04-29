@@ -16,8 +16,7 @@ const About = () => {
 
           <div className="about-text">
             <p className="about-intro">
-              Hello! I'm Julia, a passionate software engineer with a love for creating elegant solutions to complex problems.
-              My journey in tech has been driven by curiosity and a desire to build meaningful applications.
+              Hello! I'm Julia, a software engineer based in Glasgow, UK. I graduated from the University of Glasgow with a BSc in Computing Science.
             </p>
             <div className="about-cta">
               <a href="/CV.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
@@ -87,14 +86,14 @@ const About = () => {
                   <div className="timeline-content">
                     <h4>Software Engineer</h4>
                     <p className="timeline-date">2023 - Present</p>
-                    <p>Working on exciting projects and contributing to innovative solutions.</p>
+                    <p>Software development role focusing on web applications.</p>
                   </div>
                 </div>
                 <div className="timeline-item">
                   <div className="timeline-content">
                     <h4>Intern Developer</h4>
                     <p className="timeline-date">Summer 2022</p>
-                    <p>Gained valuable industry experience working on real-world applications.</p>
+                    <p>Internship position developing web applications.</p>
                   </div>
                 </div>
               </div>
@@ -106,8 +105,7 @@ const About = () => {
                 Interests
               </h3>
               <p>
-                Beyond coding, I enjoy running, hiking, and exploring new technologies. I'm particularly interested in
-                machine learning, web development, and creating intuitive user experiences.
+                Beyond coding, I enjoy running, hiking, and exploring new technologies.
               </p>
             </div>
           </div>

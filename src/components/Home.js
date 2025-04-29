@@ -37,7 +37,7 @@ const Home = () => {
             Julia Zieba
           </h1>
           <h2 ref={subtitleRef} className="hero-subtitle">
-            Software Engineer
+            Software Engineer | Glasgow, UK
           </h2>
           <div ref={ctaRef} className="hero-cta">
             <Link to="/projects" className="btn btn-primary">

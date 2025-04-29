@@ -18,7 +18,7 @@ const Projects = () => {
     {
       id: 2,
       title: "ROS Pathfinding Robot",
-      description: "A robot navigation system built with ROS (Robot Operating System) that implements various pathfinding algorithms to navigate through complex environments. The project demonstrates autonomous navigation capabilities with obstacle avoidance.",
+      description: "A robot navigation system built with ROS (Robot Operating System) that implements pathfinding algorithms for navigation.",
       image: "/images/tasket.png",
       githubLink: "https://github.com/juliawiktoria/ros_project",
       year: "2020",
@@ -27,7 +27,7 @@ const Projects = () => {
     {
       id: 3,
       title: "Comparative analysis of mutations in Genetic Algorithm for solving TSP",
-      description: "Research project analyzing different mutation operators in genetic algorithms when applied to the Traveling Salesman Problem. The study compares efficiency and convergence rates of various mutation strategies.",
+      description: "Research project analyzing different mutation operators in genetic algorithms when applied to the Traveling Salesman Problem.",
       image: "/images/research_methods.png",
       githubLink: "https://github.com/juliawiktoria/CS4040-research-methods",
       paperLink: "/ga_final_paper.pdf",
@@ -37,7 +37,7 @@ const Projects = () => {
     {
       id: 4,
       title: "Oddle Game",
-      description: "A word puzzle game inspired by Wordle but with unique gameplay mechanics. Players must guess a hidden word with limited attempts, receiving feedback on letter positions after each guess.",
+      description: "A word puzzle game inspired by Wordle. Players guess a hidden word with limited attempts, receiving feedback on letter positions after each guess.",
       image: "/images/oddle.png",
       liveLink: "https://oddle.netlify.app/",
       year: "2023",
@@ -76,7 +76,7 @@ const Projects = () => {
       <div className="container">
         <h2 className="section-title">My Projects</h2>
         <p className="projects-intro">
-          Here are some of the projects I've worked on. Each represents a unique challenge and learning experience.
+          Here are some of the projects I've worked on.
         </p>
 
         <div className="projects-grid">

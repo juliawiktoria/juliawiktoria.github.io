@@ -1,22 +1,29 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import MainPage from './components/MainPage';
-import About from './components/About'; // Import the new AboutPage component
-import Projects from './components/Projects'; // Import the new ProjectsPage component
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import './styles/App.css';
+
+// Import components
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   return (
     <Router>
-      <div>
-        <Navbar />
-        <React.Suspense fallback={<div>Loading...</div>}>
+      <div className="app">
+        <Header />
+        <main className="main-content">
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/" element={<MainPage />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<Home />} />
           </Routes>
-        </React.Suspense>
+        </main>
+        <Footer />
       </div>
     </Router>
   );

@@ -26,6 +26,7 @@ const Footer = () => {
                 <li><Link to="/about" className="footer-nav-link">About</Link></li>
                 <li><a href="/CV.pdf" className="footer-nav-link" target="_blank" rel="noopener noreferrer">Resume</a></li>
                 <li><Link to="/projects" className="footer-nav-link">Projects</Link></li>
+                <li><Link to="/games" className="footer-nav-link">Games</Link></li>
 
               </ul>
             </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faGamepad } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -42,6 +42,9 @@ const Home = () => {
           <div ref={ctaRef} className="hero-cta">
             <Link to="/projects" className="btn btn-primary">
               View My Work <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
+            <Link to="/games" className="btn btn-primary">
+              Play Games <FontAwesomeIcon icon={faGamepad} />
             </Link>
             <Link to="/about" className="btn btn-outline">
               About Me

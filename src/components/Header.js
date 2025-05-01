@@ -87,6 +87,15 @@ const Header = () => {
                 Projects
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="/games"
+                className={`nav-link ${isActive('/games') ? 'active' : ''}`}
+                onClick={closeMenu}
+              >
+                Games
+              </Link>
+            </li>
 
           </ul>
         </nav>

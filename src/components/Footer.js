@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faInstagram, faStrava } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Footer.css';
 
 const Footer = () => {
@@ -26,7 +26,7 @@ const Footer = () => {
                 <li><Link to="/about" className="footer-nav-link">About</Link></li>
                 <li><a href="/CV.pdf" className="footer-nav-link" target="_blank" rel="noopener noreferrer">Resume</a></li>
                 <li><Link to="/projects" className="footer-nav-link">Projects</Link></li>
-                <li><Link to="/contact" className="footer-nav-link">Contact</Link></li>
+
               </ul>
             </div>
 
@@ -51,24 +51,7 @@ const Footer = () => {
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a
-                  href="https://www.instagram.com/tevsk.jsolk/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                  aria-label="Instagram"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a
-                  href="https://www.strava.com/athletes/42804754"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                  aria-label="Strava"
-                >
-                  <FontAwesomeIcon icon={faStrava} />
-                </a>
+
               </div>
             </div>
           </div>

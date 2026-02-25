@@ -8,14 +8,22 @@ const Games = () => {
   const gamesData = [
     {
       id: 1,
-      title: "Game 1",
-      description: "A simple prototype game to demonstrate the Games section functionality.",
-      image: "https://via.placeholder.com/600x400/CC8751/FFFFFF?text=Game+1",
+      title: "Click the Target",
+      description: "Test your reflexes! Click on the moving target as many times as you can in 30 seconds.",
+      image: "https://via.placeholder.com/600x400/CC8751/FFFFFF?text=Click+the+Target",
       path: "/games/game1",
       technologies: ["React", "JavaScript"]
     },
     {
       id: 2,
+      title: "Oddle",
+      description: "Test your color perception by finding the rectangle with a slightly different color.",
+      image: "https://via.placeholder.com/600x400/BE6E64/FFFFFF?text=Oddle",
+      path: "/games/oddle",
+      technologies: ["React", "JavaScript", "Color Perception"]
+    },
+    {
+      id: 3,
       title: "Coming Soon",
       description: "More games are in development and will be added soon!",
       image: "https://via.placeholder.com/600x400/40464F/FFFFFF?text=Coming+Soon",

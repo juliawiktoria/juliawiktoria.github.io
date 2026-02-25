@@ -1,0 +1,178 @@
+.oddle-container {
+  max-width: 1000px;
+  margin: 8rem auto 3rem;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px var(--shadow);
+}
+
+.oddle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.oddle-header h1 {
+  color: var(--primary);
+  margin: 0;
+}
+
+.back-button {
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.back-button:hover {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.oddle-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.oddle-score {
+  color: var(--primary);
+}
+
+.oddle-round {
+  color: var(--accent);
+}
+
+.oddle-game-area {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oddle-start-screen, .oddle-end-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 2rem;
+  z-index: 10;
+}
+
+.oddle-start-screen h2, .oddle-end-screen h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.oddle-rating {
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: rgba(204, 135, 81, 0.1);
+  border-radius: 8px;
+  color: var(--primary);
+}
+
+.oddle-start-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 1.5rem;
+}
+
+.oddle-start-button:hover {
+  background-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.oddle-grid {
+  display: grid;
+  gap: 8px;
+  width: 90%;
+  height: 90%;
+  padding: 16px;
+  margin: auto;
+}
+
+.oddle-tile {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.oddle-tile:hover {
+  transform: scale(0.97);
+}
+
+.oddle-instructions {
+  background-color: rgba(204, 135, 81, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--primary);
+}
+
+.oddle-instructions h3 {
+  color: var(--primary);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .oddle-container {
+    margin-top: 6rem;
+    padding: 1.5rem;
+  }
+
+  .oddle-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .back-button {
+    align-self: flex-start;
+  }
+
+  .oddle-game-area {
+    max-width: 100%;
+  }
+
+  .oddle-grid {
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .oddle-tile {
+    border-radius: 6px;
+  }
+}

@@ -10,6 +10,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Games from './components/Games';
 import Game1 from './components/games/Game1';
+import Oddle from './components/games/Oddle';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/games" element={<Games />} />
             <Route path="/games/game1" element={<Game1 />} />
+            <Route path="/games/oddle" element={<Oddle />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </main>

@@ -11,6 +11,7 @@ const CapitalQuiz = () => {
   const [gameStarted, setGameStarted] = useState(false);
   const [selectedMode, setSelectedMode] = useState('World');
   const [isCorrect, setIsCorrect] = useState(null);
+  const [showNext, setShowNext] = useState(false);
 
   // Load countries data
   useEffect(() => {
@@ -43,12 +44,30 @@ const CapitalQuiz = () => {
     setUserAnswer('');
     setFeedback('');
     setIsCorrect(null);
+    setShowNext(false);
     setGameStarted(true);
   };
 
   // Handle answer submission
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // If showing "Next" button, move to next question
+    if (showNext) {
+      if (currentIndex + 1 < gamePool.length) {
+        setCurrentIndex(currentIndex + 1);
+        setUserAnswer('');
+        setFeedback('');
+        setIsCorrect(null);
+        setShowNext(false);
+      } else {
+        setFeedback(`Game Over! Final Score: ${score}/${gamePool.length}`);
+        setGameStarted(false);
+      }
+      return;
+    }
+
+    // Otherwise, check the answer
     if (!userAnswer.trim()) return;
 
     const currentCountry = gamePool[currentIndex];
@@ -62,18 +81,7 @@ const CapitalQuiz = () => {
       setFeedback(`Incorrect. The capital is ${currentCountry.capital}.`);
     }
 
-    // Move to next question after delay
-    setTimeout(() => {
-      if (currentIndex + 1 < gamePool.length) {
-        setCurrentIndex(currentIndex + 1);
-        setUserAnswer('');
-        setFeedback('');
-        setIsCorrect(null);
-      } else {
-        setFeedback(`Game Over! Final Score: ${correct ? score + 1 : score}/${gamePool.length}`);
-        setGameStarted(false);
-      }
-    }, 2000);
+    setShowNext(true);
   };
 
   const currentCountry = gamePool[currentIndex];
@@ -127,15 +135,15 @@ const CapitalQuiz = () => {
                     onChange={(e) => setUserAnswer(e.target.value)}
                     placeholder="Enter the capital city"
                     className="answer-input"
-                    disabled={isCorrect !== null}
+                    disabled={showNext}
                     autoFocus
                   />
-                  <button 
-                    type="submit" 
+                  <button
+                    type="submit"
                     className="submit-button"
-                    disabled={isCorrect !== null || !userAnswer.trim()}
+                    disabled={!showNext && !userAnswer.trim()}
                   >
-                    Submit
+                    {showNext ? 'Next' : 'Submit'}
                   </button>
                 </form>
 

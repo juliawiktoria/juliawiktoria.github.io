@@ -24,6 +24,14 @@ const Games = () => {
     },
     {
       id: 3,
+      title: "Capital City Quiz",
+      description: "Test your geography knowledge! Guess the capital cities of countries from around the world or specific continents.",
+      image: "https://via.placeholder.com/600x400/667eea/FFFFFF?text=Capital+Quiz",
+      path: "/games/capital-quiz",
+      technologies: ["React", "JavaScript", "Geography"]
+    },
+    {
+      id: 4,
       title: "Coming Soon",
       description: "More games are in development and will be added soon!",
       image: "https://via.placeholder.com/600x400/40464F/FFFFFF?text=Coming+Soon",

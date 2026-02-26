@@ -8,7 +8,11 @@
   max-width: 700px;
   margin: 0 auto 4rem;
   color: var(--secondary);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-weight: 400;
+  opacity: 0;
+  animation: textReveal 0.8s ease-out 0.3s forwards;
 }
 
 .games-grid {
@@ -18,16 +22,42 @@
 }
 
 .game-card {
-  background-color: var(--white);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 5px 15px var(--shadow);
-  transition: var(--transition);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-slow);
   opacity: 0;
   transform: translateY(30px);
   height: 100%;
   display: flex;
   flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.game-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: var(--gradient-secondary);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.game-card:hover::before {
+  opacity: 1;
 }
 
 .game-card.fade-in {
@@ -36,25 +66,37 @@
 }
 
 .game-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px) rotateX(2deg);
+  box-shadow: var(--shadow-xl);
 }
 
 .game-image {
   position: relative;
   overflow: hidden;
   height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+
+.game-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+  pointer-events: none;
 }
 
 .game-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: var(--transition);
+  transition: var(--transition-slow);
 }
 
 .game-card:hover .game-image img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .game-play-button {
@@ -76,7 +118,7 @@
 }
 
 .play-button {
-  background-color: var(--primary);
+  background: var(--gradient-secondary);
   color: white;
   padding: 0.8rem 2rem;
   border-radius: 30px;
@@ -85,11 +127,13 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .play-button:hover {
-  background-color: var(--accent);
-  transform: scale(1.05);
+  transform: scale(1.1);
+  box-shadow: var(--shadow-xl);
 }
 
 .coming-soon-overlay {
@@ -118,7 +162,11 @@
 .game-title {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  color: var(--primary);
+  background: var(--gradient-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
 }
 
 .game-description {
@@ -135,18 +183,21 @@
 }
 
 .tech-tag {
-  background-color: rgba(204, 135, 81, 0.1);
-  color: var(--primary);
+  background: linear-gradient(135deg, rgba(245, 87, 108, 0.1) 0%, rgba(240, 147, 251, 0.1) 100%);
+  color: var(--accent);
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
   transition: var(--transition);
+  border: 1px solid rgba(245, 87, 108, 0.2);
 }
 
 .tech-tag:hover {
-  background-color: var(--primary);
+  background: var(--gradient-secondary);
   color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }
 
 @media (max-width: 768px) {

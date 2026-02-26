@@ -31,6 +31,10 @@ const Home = () => {
 
   return (
     <section className="hero">
+      <div className="floating-shape"></div>
+      <div className="floating-shape"></div>
+      <div className="floating-shape"></div>
+
       <div className="container hero-container">
         <div className="hero-content">
           <h1 ref={titleRef} className="hero-title">

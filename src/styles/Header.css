@@ -10,10 +10,12 @@
 }
 
 .header.scrolled {
-  background-color: rgba(247, 246, 238, 0.95);
-  box-shadow: 0 2px 10px var(--shadow);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-md);
   padding: 1rem 0;
-  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(102, 126, 234, 0.1);
 }
 
 .header-container {
@@ -25,8 +27,28 @@
 .logo {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--primary);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   transition: var(--transition);
+  position: relative;
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--gradient-accent);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.logo:hover::after {
+  width: 100%;
 }
 
 .logo:hover {
@@ -46,7 +68,7 @@
 .nav-link {
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--secondary);
+  color: var(--dark);
   position: relative;
   padding: 0.5rem 0;
   transition: var(--transition);
@@ -56,16 +78,21 @@
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 0;
-  height: 2px;
-  background-color: var(--primary);
-  transition: var(--transition);
+  height: 3px;
+  background: var(--gradient-primary);
+  transition: width 0.3s ease;
+  border-radius: 2px;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--primary);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .nav-link:hover::after,

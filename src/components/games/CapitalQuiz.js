@@ -13,6 +13,7 @@ const CapitalQuiz = () => {
   const [isCorrect, setIsCorrect] = useState(null);
   const [showNext, setShowNext] = useState(false);
   const nextButtonRef = useRef(null);
+  const inputRef = useRef(null);
 
   // Load countries data
   useEffect(() => {
@@ -22,12 +23,14 @@ const CapitalQuiz = () => {
       .catch(error => console.error('Error loading countries:', error));
   }, []);
 
-  // Focus the Next button when it appears
+  // Focus the Next button when it appears, or focus input when new question starts
   useEffect(() => {
     if (showNext && nextButtonRef.current) {
       nextButtonRef.current.focus();
+    } else if (!showNext && inputRef.current) {
+      inputRef.current.focus();
     }
-  }, [showNext]);
+  }, [showNext, currentIndex]);
 
   // Fisher-Yates shuffle
   const shuffleArray = (array) => {
@@ -144,7 +147,7 @@ const CapitalQuiz = () => {
                     placeholder="Enter the capital city"
                     className="answer-input"
                     disabled={showNext}
-                    autoFocus
+                    ref={inputRef}
                   />
                   <button
                     type="submit"

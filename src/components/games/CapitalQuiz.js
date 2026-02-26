@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../../styles/CapitalQuiz.css';
 
 const CapitalQuiz = () => {
@@ -12,6 +12,7 @@ const CapitalQuiz = () => {
   const [selectedMode, setSelectedMode] = useState('World');
   const [isCorrect, setIsCorrect] = useState(null);
   const [showNext, setShowNext] = useState(false);
+  const nextButtonRef = useRef(null);
 
   // Load countries data
   useEffect(() => {
@@ -20,6 +21,13 @@ const CapitalQuiz = () => {
       .then(data => setCountries(data))
       .catch(error => console.error('Error loading countries:', error));
   }, []);
+
+  // Focus the Next button when it appears
+  useEffect(() => {
+    if (showNext && nextButtonRef.current) {
+      nextButtonRef.current.focus();
+    }
+  }, [showNext]);
 
   // Fisher-Yates shuffle
   const shuffleArray = (array) => {
@@ -142,6 +150,7 @@ const CapitalQuiz = () => {
                     type="submit"
                     className="submit-button"
                     disabled={!showNext && !userAnswer.trim()}
+                    ref={nextButtonRef}
                   >
                     {showNext ? 'Next' : 'Submit'}
                   </button>
